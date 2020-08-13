@@ -3,7 +3,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', '04fa0f8f-1a8b-4fc9-a8b4-60badacb4202') {
+    docker.withRegistry('https://registry.hub.docker.com', 'access2dockerhub') {
 
         def customImage = docker.build("singymingy86/nginx_hello")
 
